@@ -1,0 +1,26 @@
+{
+  "name": "areact",
+  "version": "1.0.0",
+  "description": "react basic to advance",
+  "scripts": {
+    "test": "jest",
+    "start":"parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Shubh-Sad-Ratna/AReact)"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shubham Band",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
