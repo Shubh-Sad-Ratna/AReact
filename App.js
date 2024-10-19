@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
-const parent=React.createElement('div',{id:'parent'},[
-    React.createElement('div',{id:'child'},[
-        React.createElement('h1',{id:'head1'},"Hello h1"),
-        React.createElement('h2',{id:'head2'},"Hello h2")
-    ]),
-    React.createElement('div',{id:'child2'},[
-        React.createElement('h1',{id:'head3'},"Hello h1"),
-        React.createElement('h2',{id:'head4'},"Hello h2")
-    ])
-]);
+const Head=()=>{
+    return(
+    <h1>Hello World</h1>
+    )
+}
+const Title=()=>{
+    return(
+    <div>
+        <p>Hello</p>
+        {Head()}
+        <Head/>
+    </div>
+    )
+}
 const root=ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent);
+root.render(<Title/>);
